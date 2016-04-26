@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		268DE69E1CCF9B200011A3F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 268DE69D1CCF9B200011A3F6 /* main.m */; };
+		268DE6A11CCF9B200011A3F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 268DE6A01CCF9B200011A3F6 /* AppDelegate.m */; };
+		268DE6A91CCF9B200011A3F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 268DE6A81CCF9B200011A3F6 /* Assets.xcassets */; };
+		268DE6AC1CCF9B200011A3F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 268DE6AA1CCF9B200011A3F6 /* LaunchScreen.storyboard */; };
+		268DE6B71CCF9B200011A3F6 /* JXContactTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 268DE6B61CCF9B200011A3F6 /* JXContactTests.m */; };
+		268DE6C21CCF9B200011A3F6 /* JXContactUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 268DE6C11CCF9B200011A3F6 /* JXContactUITests.m */; };
+		268DE6D11CCF9B780011A3F6 /* JXMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 268DE6D01CCF9B780011A3F6 /* JXMainController.m */; };
+		268DE6ED1CCF9CD50011A3F6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 268DE6D31CCF9CD50011A3F6 /* Info.plist */; };
+		268DE6EE1CCF9CD50011A3F6 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 268DE6D51CCF9CD50011A3F6 /* MASCompositeConstraint.m */; };
+		268DE6EF1CCF9CD50011A3F6 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 268DE6D81CCF9CD50011A3F6 /* MASConstraint.m */; };
+		268DE6F01CCF9CD50011A3F6 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 268DE6DA1CCF9CD50011A3F6 /* MASConstraintMaker.m */; };
+		268DE6F11CCF9CD50011A3F6 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 268DE6DC1CCF9CD50011A3F6 /* MASLayoutConstraint.m */; };
+		268DE6F21CCF9CD50011A3F6 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 268DE6E01CCF9CD50011A3F6 /* MASViewAttribute.m */; };
+		268DE6F31CCF9CD50011A3F6 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 268DE6E21CCF9CD50011A3F6 /* MASViewConstraint.m */; };
+		268DE6F41CCF9CD50011A3F6 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 268DE6E41CCF9CD50011A3F6 /* NSArray+MASAdditions.m */; };
+		268DE6F51CCF9CD50011A3F6 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 268DE6E71CCF9CD50011A3F6 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		268DE6F61CCF9CD50011A3F6 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 268DE6E91CCF9CD50011A3F6 /* View+MASAdditions.m */; };
+		268DE6F71CCF9CD50011A3F6 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 268DE6EC1CCF9CD50011A3F6 /* ViewController+MASAdditions.m */; };
+		268DE6FC1CCFB4EC0011A3F6 /* JXContactController.m in Sources */ = {isa = PBXBuildFile; fileRef = 268DE6FB1CCFB4EC0011A3F6 /* JXContactController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		268DE6B31CCF9B200011A3F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 268DE6911CCF9B200011A3F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 268DE6981CCF9B200011A3F6;
+			remoteInfo = JXContact;
+		};
+		268DE6BE1CCF9B200011A3F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 268DE6911CCF9B200011A3F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 268DE6981CCF9B200011A3F6;
+			remoteInfo = JXContact;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		268DE6991CCF9B200011A3F6 /* JXContact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JXContact.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		268DE69D1CCF9B200011A3F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		268DE69F1CCF9B200011A3F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		268DE6A01CCF9B200011A3F6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		268DE6A81CCF9B200011A3F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		268DE6AB1CCF9B200011A3F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		268DE6AD1CCF9B200011A3F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		268DE6B21CCF9B200011A3F6 /* JXContactTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JXContactTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		268DE6B61CCF9B200011A3F6 /* JXContactTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JXContactTests.m; sourceTree = "<group>"; };
+		268DE6B81CCF9B200011A3F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		268DE6BD1CCF9B200011A3F6 /* JXContactUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JXContactUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		268DE6C11CCF9B200011A3F6 /* JXContactUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JXContactUITests.m; sourceTree = "<group>"; };
+		268DE6C31CCF9B200011A3F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		268DE6CF1CCF9B780011A3F6 /* JXMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXMainController.h; sourceTree = "<group>"; };
+		268DE6D01CCF9B780011A3F6 /* JXMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXMainController.m; sourceTree = "<group>"; };
+		268DE6D31CCF9CD50011A3F6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		268DE6D41CCF9CD50011A3F6 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		268DE6D51CCF9CD50011A3F6 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		268DE6D61CCF9CD50011A3F6 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		268DE6D71CCF9CD50011A3F6 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		268DE6D81CCF9CD50011A3F6 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		268DE6D91CCF9CD50011A3F6 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		268DE6DA1CCF9CD50011A3F6 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		268DE6DB1CCF9CD50011A3F6 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		268DE6DC1CCF9CD50011A3F6 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		268DE6DD1CCF9CD50011A3F6 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		268DE6DE1CCF9CD50011A3F6 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		268DE6DF1CCF9CD50011A3F6 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		268DE6E01CCF9CD50011A3F6 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		268DE6E11CCF9CD50011A3F6 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		268DE6E21CCF9CD50011A3F6 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		268DE6E31CCF9CD50011A3F6 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		268DE6E41CCF9CD50011A3F6 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		268DE6E51CCF9CD50011A3F6 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		268DE6E61CCF9CD50011A3F6 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		268DE6E71CCF9CD50011A3F6 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		268DE6E81CCF9CD50011A3F6 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		268DE6E91CCF9CD50011A3F6 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		268DE6EA1CCF9CD50011A3F6 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		268DE6EB1CCF9CD50011A3F6 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		268DE6EC1CCF9CD50011A3F6 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		268DE6FA1CCFB4EC0011A3F6 /* JXContactController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXContactController.h; sourceTree = "<group>"; };
+		268DE6FB1CCFB4EC0011A3F6 /* JXContactController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXContactController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		268DE6961CCF9B200011A3F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		268DE6AF1CCF9B200011A3F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		268DE6BA1CCF9B200011A3F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		268DE6901CCF9B200011A3F6 = {
+			isa = PBXGroup;
+			children = (
+				268DE69B1CCF9B200011A3F6 /* JXContact */,
+				268DE6B51CCF9B200011A3F6 /* JXContactTests */,
+				268DE6C01CCF9B200011A3F6 /* JXContactUITests */,
+				268DE69A1CCF9B200011A3F6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		268DE69A1CCF9B200011A3F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				268DE6991CCF9B200011A3F6 /* JXContact.app */,
+				268DE6B21CCF9B200011A3F6 /* JXContactTests.xctest */,
+				268DE6BD1CCF9B200011A3F6 /* JXContactUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		268DE69B1CCF9B200011A3F6 /* JXContact */ = {
+			isa = PBXGroup;
+			children = (
+				268DE69F1CCF9B200011A3F6 /* AppDelegate.h */,
+				268DE6A01CCF9B200011A3F6 /* AppDelegate.m */,
+				268DE6CF1CCF9B780011A3F6 /* JXMainController.h */,
+				268DE6D01CCF9B780011A3F6 /* JXMainController.m */,
+				268DE6FA1CCFB4EC0011A3F6 /* JXContactController.h */,
+				268DE6FB1CCFB4EC0011A3F6 /* JXContactController.m */,
+				268DE6D21CCF9CD50011A3F6 /* Masonry */,
+				268DE69C1CCF9B200011A3F6 /* Supporting Files */,
+			);
+			path = JXContact;
+			sourceTree = "<group>";
+		};
+		268DE69C1CCF9B200011A3F6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				268DE6A81CCF9B200011A3F6 /* Assets.xcassets */,
+				268DE6AA1CCF9B200011A3F6 /* LaunchScreen.storyboard */,
+				268DE6AD1CCF9B200011A3F6 /* Info.plist */,
+				268DE69D1CCF9B200011A3F6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		268DE6B51CCF9B200011A3F6 /* JXContactTests */ = {
+			isa = PBXGroup;
+			children = (
+				268DE6B61CCF9B200011A3F6 /* JXContactTests.m */,
+				268DE6B81CCF9B200011A3F6 /* Info.plist */,
+			);
+			path = JXContactTests;
+			sourceTree = "<group>";
+		};
+		268DE6C01CCF9B200011A3F6 /* JXContactUITests */ = {
+			isa = PBXGroup;
+			children = (
+				268DE6C11CCF9B200011A3F6 /* JXContactUITests.m */,
+				268DE6C31CCF9B200011A3F6 /* Info.plist */,
+			);
+			path = JXContactUITests;
+			sourceTree = "<group>";
+		};
+		268DE6D21CCF9CD50011A3F6 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				268DE6D31CCF9CD50011A3F6 /* Info.plist */,
+				268DE6D41CCF9CD50011A3F6 /* MASCompositeConstraint.h */,
+				268DE6D51CCF9CD50011A3F6 /* MASCompositeConstraint.m */,
+				268DE6D61CCF9CD50011A3F6 /* MASConstraint+Private.h */,
+				268DE6D71CCF9CD50011A3F6 /* MASConstraint.h */,
+				268DE6D81CCF9CD50011A3F6 /* MASConstraint.m */,
+				268DE6D91CCF9CD50011A3F6 /* MASConstraintMaker.h */,
+				268DE6DA1CCF9CD50011A3F6 /* MASConstraintMaker.m */,
+				268DE6DB1CCF9CD50011A3F6 /* MASLayoutConstraint.h */,
+				268DE6DC1CCF9CD50011A3F6 /* MASLayoutConstraint.m */,
+				268DE6DD1CCF9CD50011A3F6 /* Masonry.h */,
+				268DE6DE1CCF9CD50011A3F6 /* MASUtilities.h */,
+				268DE6DF1CCF9CD50011A3F6 /* MASViewAttribute.h */,
+				268DE6E01CCF9CD50011A3F6 /* MASViewAttribute.m */,
+				268DE6E11CCF9CD50011A3F6 /* MASViewConstraint.h */,
+				268DE6E21CCF9CD50011A3F6 /* MASViewConstraint.m */,
+				268DE6E31CCF9CD50011A3F6 /* NSArray+MASAdditions.h */,
+				268DE6E41CCF9CD50011A3F6 /* NSArray+MASAdditions.m */,
+				268DE6E51CCF9CD50011A3F6 /* NSArray+MASShorthandAdditions.h */,
+				268DE6E61CCF9CD50011A3F6 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				268DE6E71CCF9CD50011A3F6 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				268DE6E81CCF9CD50011A3F6 /* View+MASAdditions.h */,
+				268DE6E91CCF9CD50011A3F6 /* View+MASAdditions.m */,
+				268DE6EA1CCF9CD50011A3F6 /* View+MASShorthandAdditions.h */,
+				268DE6EB1CCF9CD50011A3F6 /* ViewController+MASAdditions.h */,
+				268DE6EC1CCF9CD50011A3F6 /* ViewController+MASAdditions.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		268DE6981CCF9B200011A3F6 /* JXContact */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 268DE6C61CCF9B200011A3F6 /* Build configuration list for PBXNativeTarget "JXContact" */;
+			buildPhases = (
+				268DE6951CCF9B200011A3F6 /* Sources */,
+				268DE6961CCF9B200011A3F6 /* Frameworks */,
+				268DE6971CCF9B200011A3F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JXContact;
+			productName = JXContact;
+			productReference = 268DE6991CCF9B200011A3F6 /* JXContact.app */;
+			productType = "com.apple.product-type.application";
+		};
+		268DE6B11CCF9B200011A3F6 /* JXContactTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 268DE6C91CCF9B200011A3F6 /* Build configuration list for PBXNativeTarget "JXContactTests" */;
+			buildPhases = (
+				268DE6AE1CCF9B200011A3F6 /* Sources */,
+				268DE6AF1CCF9B200011A3F6 /* Frameworks */,
+				268DE6B01CCF9B200011A3F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				268DE6B41CCF9B200011A3F6 /* PBXTargetDependency */,
+			);
+			name = JXContactTests;
+			productName = JXContactTests;
+			productReference = 268DE6B21CCF9B200011A3F6 /* JXContactTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		268DE6BC1CCF9B200011A3F6 /* JXContactUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 268DE6CC1CCF9B200011A3F6 /* Build configuration list for PBXNativeTarget "JXContactUITests" */;
+			buildPhases = (
+				268DE6B91CCF9B200011A3F6 /* Sources */,
+				268DE6BA1CCF9B200011A3F6 /* Frameworks */,
+				268DE6BB1CCF9B200011A3F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				268DE6BF1CCF9B200011A3F6 /* PBXTargetDependency */,
+			);
+			name = JXContactUITests;
+			productName = JXContactUITests;
+			productReference = 268DE6BD1CCF9B200011A3F6 /* JXContactUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		268DE6911CCF9B200011A3F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JX;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Wangjiaxiang;
+				TargetAttributes = {
+					268DE6981CCF9B200011A3F6 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 6F399U28WY;
+					};
+					268DE6B11CCF9B200011A3F6 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 6F399U28WY;
+						TestTargetID = 268DE6981CCF9B200011A3F6;
+					};
+					268DE6BC1CCF9B200011A3F6 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 6F399U28WY;
+						TestTargetID = 268DE6981CCF9B200011A3F6;
+					};
+				};
+			};
+			buildConfigurationList = 268DE6941CCF9B200011A3F6 /* Build configuration list for PBXProject "JXContact" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 268DE6901CCF9B200011A3F6;
+			productRefGroup = 268DE69A1CCF9B200011A3F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				268DE6981CCF9B200011A3F6 /* JXContact */,
+				268DE6B11CCF9B200011A3F6 /* JXContactTests */,
+				268DE6BC1CCF9B200011A3F6 /* JXContactUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		268DE6971CCF9B200011A3F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				268DE6AC1CCF9B200011A3F6 /* LaunchScreen.storyboard in Resources */,
+				268DE6A91CCF9B200011A3F6 /* Assets.xcassets in Resources */,
+				268DE6ED1CCF9CD50011A3F6 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		268DE6B01CCF9B200011A3F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		268DE6BB1CCF9B200011A3F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		268DE6951CCF9B200011A3F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				268DE6F51CCF9CD50011A3F6 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				268DE6F31CCF9CD50011A3F6 /* MASViewConstraint.m in Sources */,
+				268DE6EE1CCF9CD50011A3F6 /* MASCompositeConstraint.m in Sources */,
+				268DE6F41CCF9CD50011A3F6 /* NSArray+MASAdditions.m in Sources */,
+				268DE6A11CCF9B200011A3F6 /* AppDelegate.m in Sources */,
+				268DE6D11CCF9B780011A3F6 /* JXMainController.m in Sources */,
+				268DE6FC1CCFB4EC0011A3F6 /* JXContactController.m in Sources */,
+				268DE6F11CCF9CD50011A3F6 /* MASLayoutConstraint.m in Sources */,
+				268DE69E1CCF9B200011A3F6 /* main.m in Sources */,
+				268DE6F71CCF9CD50011A3F6 /* ViewController+MASAdditions.m in Sources */,
+				268DE6F61CCF9CD50011A3F6 /* View+MASAdditions.m in Sources */,
+				268DE6F21CCF9CD50011A3F6 /* MASViewAttribute.m in Sources */,
+				268DE6EF1CCF9CD50011A3F6 /* MASConstraint.m in Sources */,
+				268DE6F01CCF9CD50011A3F6 /* MASConstraintMaker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		268DE6AE1CCF9B200011A3F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				268DE6B71CCF9B200011A3F6 /* JXContactTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		268DE6B91CCF9B200011A3F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				268DE6C21CCF9B200011A3F6 /* JXContactUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		268DE6B41CCF9B200011A3F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 268DE6981CCF9B200011A3F6 /* JXContact */;
+			targetProxy = 268DE6B31CCF9B200011A3F6 /* PBXContainerItemProxy */;
+		};
+		268DE6BF1CCF9B200011A3F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 268DE6981CCF9B200011A3F6 /* JXContact */;
+			targetProxy = 268DE6BE1CCF9B200011A3F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		268DE6AA1CCF9B200011A3F6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				268DE6AB1CCF9B200011A3F6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		268DE6C41CCF9B200011A3F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		268DE6C51CCF9B200011A3F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		268DE6C71CCF9B200011A3F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JXContact/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.preson.JXContact;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		268DE6C81CCF9B200011A3F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JXContact/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.preson.JXContact;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		268DE6CA1CCF9B200011A3F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JXContactTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.preson.JXContactTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JXContact.app/JXContact";
+			};
+			name = Debug;
+		};
+		268DE6CB1CCF9B200011A3F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JXContactTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.preson.JXContactTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JXContact.app/JXContact";
+			};
+			name = Release;
+		};
+		268DE6CD1CCF9B200011A3F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = JXContactUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.preson.JXContactUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JXContact;
+			};
+			name = Debug;
+		};
+		268DE6CE1CCF9B200011A3F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = JXContactUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.preson.JXContactUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JXContact;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		268DE6941CCF9B200011A3F6 /* Build configuration list for PBXProject "JXContact" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				268DE6C41CCF9B200011A3F6 /* Debug */,
+				268DE6C51CCF9B200011A3F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		268DE6C61CCF9B200011A3F6 /* Build configuration list for PBXNativeTarget "JXContact" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				268DE6C71CCF9B200011A3F6 /* Debug */,
+				268DE6C81CCF9B200011A3F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		268DE6C91CCF9B200011A3F6 /* Build configuration list for PBXNativeTarget "JXContactTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				268DE6CA1CCF9B200011A3F6 /* Debug */,
+				268DE6CB1CCF9B200011A3F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		268DE6CC1CCF9B200011A3F6 /* Build configuration list for PBXNativeTarget "JXContactUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				268DE6CD1CCF9B200011A3F6 /* Debug */,
+				268DE6CE1CCF9B200011A3F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 268DE6911CCF9B200011A3F6 /* Project object */;
+}
