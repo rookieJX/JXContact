@@ -16,8 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.navigationItem.title = @"联系人账户";
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    // 这句代码的意思就是当tableView某行有数据的时候我们就展示数据
+    self.tableView.tableFooterView = [[UIView alloc] init];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"注销" style:UIBarButtonItemStyleDone target:self action:@selector(cancel)];
 }
 

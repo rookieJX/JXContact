@@ -9,8 +9,9 @@
 #import "JXMainController.h"
 #import "JXContactController.h"
 #import "Masonry.h"
+#import "MBProgressHUD.h"
 
-@interface JXMainController ()
+@interface JXMainController ()<UITextFieldDelegate>
 
 /** 账户名输入框 */
 @property (nonatomic,strong) UITextField * nameTextField;
@@ -110,20 +111,20 @@
     // 添加背景按钮约束
     [self.remeberView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.view.mas_left).mas_offset(30);
-        make.width.mas_equalTo(150);
+        make.width.mas_equalTo(110);
         make.top.mas_equalTo(self.pwdTextField.mas_bottom).mas_offset(40);
     }];
     
     // 背景图片添加控件
     UILabel * remeber = [[UILabel alloc] init];
-    remeber.text = @"是否记住密码";
+    remeber.text = @"记住密码";
     remeber.font = [UIFont systemFontOfSize:15];
     [self.remeberView addSubview:remeber];
     [remeber mas_updateConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.remeberView);
         make.top.mas_equalTo(self.remeberView);
         make.bottom.mas_equalTo(self.remeberView);
-        make.width.mas_equalTo(90);
+        make.width.mas_equalTo(60);
     }];
     
     [self.remeberView addSubview:self.isRemeber];
@@ -149,14 +150,14 @@
     
     // 背景图片添加控件
     UILabel * autoLogin = [[UILabel alloc] init];
-    autoLogin.text = @"是否自动登录";
+    autoLogin.text = @"自动登录";
     autoLogin.font = [UIFont systemFontOfSize:15];
     [self.autoView addSubview:autoLogin];
     [autoLogin mas_updateConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.autoView);
         make.top.mas_equalTo(self.autoView);
         make.bottom.mas_equalTo(self.autoView);
-        make.width.mas_equalTo(90);
+        make.width.mas_equalTo(60);
     }];
     
     [self.autoView addSubview:self.isAuto];
@@ -203,14 +204,44 @@
 }
 
 - (void)login:(UIButton *)loginBtn {
-    JXContactController * contact = [[JXContactController alloc] init];
-    [self.navigationController pushViewController:contact animated:YES];
+    if ([self.nameTextField.text isEqualToString:@"jxmbp"] && [self.pwdTextField.text isEqualToString:@"123456"]) {
+        MBProgressHUD * hud = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
+        hud.mode = MBProgressHUDModeAnnularDeterminate;
+        hud.label.text = @"登陆中...";
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            hud.hidden = YES;
+            JXContactController * contact = [[JXContactController alloc] init];
+            contact.navigationItem.title = self.nameTextField.text;
+            [self.navigationController pushViewController:contact animated:YES];
+        });
+        
+    } else {
+        MBProgressHUD * hud = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
+        hud.mode = MBProgressHUDModeText;
+        hud.label.text = @"用户名或者密码错误";
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            hud.hidden = YES;
+        });
+    }
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.view endEditing:YES];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [self.view endEditing:YES];
+
+    return YES;
+}
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSLog(@"segue");
+}
 #pragma mark - 懒加载
 - (UITextField *)nameTextField {
     if (_nameTextField == nil) {
         _nameTextField = [[UITextField alloc] init];
+        _nameTextField.delegate = self;
         _nameTextField.borderStyle = UITextBorderStyleRoundedRect;
         _nameTextField.placeholder = @"请输入用户名";
         _nameTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
@@ -221,6 +252,7 @@
 - (UITextField *)pwdTextField {
     if (_pwdTextField == nil) {
         _pwdTextField = [[UITextField alloc] init];
+        _pwdTextField.delegate = self;
         _pwdTextField.borderStyle = UITextBorderStyleRoundedRect;
         _pwdTextField.placeholder = @"请输入密码";
         _pwdTextField.secureTextEntry = YES;
