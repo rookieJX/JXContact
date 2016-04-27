@@ -43,15 +43,24 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.title = @"欢迎进入我的联系";
     
+    // 创建登陆界面
     [self setupContact];
     
+    // 创建是否记住密码界面
     [self setupRemember];
     
+    // 创建是否自动登陆界面
     [self setupAuto];
     
+    // 创建点击按钮
     [self setupLogin];
     
+    // 点击登陆
     [self createLogic];
+    
+    // 主动调用
+    [self textChanged];
+    
 }
 
 
@@ -206,7 +215,7 @@
 - (void)login:(UIButton *)loginBtn {
     if ([self.nameTextField.text isEqualToString:@"jxmbp"] && [self.pwdTextField.text isEqualToString:@"123456"]) {
         MBProgressHUD * hud = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
-        hud.mode = MBProgressHUDModeAnnularDeterminate;
+        hud.mode = MBProgressHUDModeIndeterminate;
         hud.label.text = @"登陆中...";
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             hud.hidden = YES;
@@ -244,6 +253,7 @@
         _nameTextField.delegate = self;
         _nameTextField.borderStyle = UITextBorderStyleRoundedRect;
         _nameTextField.placeholder = @"请输入用户名";
+        _nameTextField.text = @"jxmbp";
         _nameTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
     }
     return _nameTextField;
@@ -255,6 +265,7 @@
         _pwdTextField.delegate = self;
         _pwdTextField.borderStyle = UITextBorderStyleRoundedRect;
         _pwdTextField.placeholder = @"请输入密码";
+        _pwdTextField.text = @"123456";
         _pwdTextField.secureTextEntry = YES;
         _pwdTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
     }
