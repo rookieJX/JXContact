@@ -11,6 +11,8 @@
 		268DE6AC1CCF9B200011A3F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 268DE6AA1CCF9B200011A3F6 /* LaunchScreen.storyboard */; };
 		268DE6B71CCF9B200011A3F6 /* JXContactTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 268DE6B61CCF9B200011A3F6 /* JXContactTests.m */; };
 		268DE6C21CCF9B200011A3F6 /* JXContactUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 268DE6C11CCF9B200011A3F6 /* JXContactUITests.m */; };
+		26D77AA91CD10EC8005837D9 /* JXDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26D77AA81CD10EC8005837D9 /* JXDetails.storyboard */; };
+		26D77AAE1CD10F3F005837D9 /* JXEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D77AAD1CD10F3F005837D9 /* JXEditController.m */; };
 		5B8496A21CD0A23700A1B52F /* JXContactController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8496731CD0A23700A1B52F /* JXContactController.m */; };
 		5B8496A31CD0A23700A1B52F /* JXMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B84967D1CD0A23700A1B52F /* JXMainController.m */; };
 		5B8496A41CD0A23700A1B52F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8496821CD0A23700A1B52F /* AppDelegate.m */; };
@@ -59,6 +61,9 @@
 		268DE6BD1CCF9B200011A3F6 /* JXContactUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JXContactUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		268DE6C11CCF9B200011A3F6 /* JXContactUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JXContactUITests.m; sourceTree = "<group>"; };
 		268DE6C31CCF9B200011A3F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26D77AA81CD10EC8005837D9 /* JXDetails.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JXDetails.storyboard; sourceTree = "<group>"; };
+		26D77AAC1CD10F3F005837D9 /* JXEditController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXEditController.h; sourceTree = "<group>"; };
+		26D77AAD1CD10F3F005837D9 /* JXEditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXEditController.m; sourceTree = "<group>"; };
 		5B8496721CD0A23700A1B52F /* JXContactController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXContactController.h; sourceTree = "<group>"; };
 		5B8496731CD0A23700A1B52F /* JXContactController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXContactController.m; sourceTree = "<group>"; };
 		5B84967C1CD0A23700A1B52F /* JXMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXMainController.h; sourceTree = "<group>"; };
@@ -160,6 +165,7 @@
 				268DE6A81CCF9B200011A3F6 /* Assets.xcassets */,
 				268DE6AA1CCF9B200011A3F6 /* LaunchScreen.storyboard */,
 				268DE6AD1CCF9B200011A3F6 /* Info.plist */,
+				26D77AA81CD10EC8005837D9 /* JXDetails.storyboard */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -182,9 +188,27 @@
 			path = JXContactUITests;
 			sourceTree = "<group>";
 		};
+		26D77AAA1CD10F26005837D9 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				26D77AAB1CD10F26005837D9 /* Controller */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		26D77AAB1CD10F26005837D9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				26D77AAC1CD10F3F005837D9 /* JXEditController.h */,
+				26D77AAD1CD10F3F005837D9 /* JXEditController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		5B84966F1CD0A23700A1B52F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				26D77AAA1CD10F26005837D9 /* Edit */,
 				5B8496701CD0A23700A1B52F /* Add */,
 				5B8496761CD0A23700A1B52F /* Contact */,
 				5B84967A1CD0A23700A1B52F /* Main */,
@@ -458,6 +482,7 @@
 				268DE6AC1CCF9B200011A3F6 /* LaunchScreen.storyboard in Resources */,
 				268DE6A91CCF9B200011A3F6 /* Assets.xcassets in Resources */,
 				5B8496A61CD0A23700A1B52F /* Info.plist in Resources */,
+				26D77AA91CD10EC8005837D9 /* JXDetails.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +508,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B8496A91CD0A23700A1B52F /* MASConstraintMaker.m in Sources */,
+				26D77AAE1CD10F3F005837D9 /* JXEditController.m in Sources */,
 				5B8496A31CD0A23700A1B52F /* JXMainController.m in Sources */,
 				5B8496BA1CD0A52A00A1B52F /* JXContactModel.m in Sources */,
 				5B8496A21CD0A23700A1B52F /* JXContactController.m in Sources */,

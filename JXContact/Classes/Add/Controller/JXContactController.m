@@ -9,6 +9,7 @@
 #import "JXContactController.h"
 #import "JXAddViewController.h"
 #import "JXContactModel.h"
+#import "JXEditController.h"
 @interface JXContactController ()<JXAddViewControllerDelegate>
 
 /** 模型列表 */
@@ -82,6 +83,19 @@
     cell.textLabel.text = [NSString stringWithFormat:@"%@",model.name];
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%@",model.mobile];
     return cell;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    JXContactModel * model = self.contacts[indexPath.row];
+    UIStoryboard * story = [UIStoryboard storyboardWithName:@"JXDetails" bundle:[NSBundle mainBundle]];
+    JXEditController * edit = [story instantiateViewControllerWithIdentifier:@"detail"];
+    edit.contact = model;
+    edit.block = ^(){
+        [self.tableView reloadData];
+    };
+    [self.navigationController pushViewController:edit animated:YES];
 }
 
 #pragma mark - JXAddViewControllerDelegate

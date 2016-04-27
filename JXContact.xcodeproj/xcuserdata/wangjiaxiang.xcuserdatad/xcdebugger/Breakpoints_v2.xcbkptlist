@@ -2,4 +2,133 @@
 <Bucket
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JXContact/Classes/Add/Controller/JXContactController.m"
+            timestampString = "483466992.992213"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "-tableView:didSelectRowAtIndexPath:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[JXContactController tableView:didSelectRowAtIndexPath:]"
+                  moduleName = "JXContact"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wangjiaxiang/Desktop/JXContact/JXContact/Classes/Add/Controller/JXContactController.m"
+                  timestampString = "483466992.995508"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "359">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__57-[JXContactController tableView:didSelectRowAtIndexPath:]_block_invoke"
+                  moduleName = "JXContact"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wangjiaxiang/Desktop/JXContact/JXContact/Classes/Add/Controller/JXContactController.m"
+                  timestampString = "483466992.995672"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JXContact/Classes/Add/Controller/JXContactController.m"
+            timestampString = "483466993.588257"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "-tableView:didSelectRowAtIndexPath:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JXContact/Classes/Add/Controller/JXContactController.m"
+            timestampString = "483466994.156261"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "-tableView:didSelectRowAtIndexPath:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__57-[JXContactController tableView:didSelectRowAtIndexPath:]_block_invoke"
+                  moduleName = "JXContact"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wangjiaxiang/Desktop/JXContact/JXContact/Classes/Add/Controller/JXContactController.m"
+                  timestampString = "483466994.160023"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97"
+                  offsetFromSymbolStart = "77">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__copy_helper_block_.110"
+                  moduleName = "JXContact"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wangjiaxiang/Desktop/JXContact/JXContact/Classes/Add/Controller/JXContactController.m"
+                  timestampString = "483466994.160184"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97"
+                  offsetFromSymbolStart = "51">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_.111"
+                  moduleName = "JXContact"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wangjiaxiang/Desktop/JXContact/JXContact/Classes/Add/Controller/JXContactController.m"
+                  timestampString = "483466994.160288"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97"
+                  offsetFromSymbolStart = "29">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
