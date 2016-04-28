@@ -10,6 +10,8 @@
 #import "JXContactController.h"
 #import "Masonry.h"
 #import "MBProgressHUD.h"
+#import "JXLoginModel.h"
+#import "JXLoginModelTool.h"
 
 @interface JXMainController ()<UITextFieldDelegate>
 
@@ -61,6 +63,15 @@
     // 主动调用
     [self textChanged];
     
+    
+    // 自动登录
+    JXLoginModel * loginModel = [JXLoginModelTool loginModel];
+    if (loginModel.isAuto == YES) {
+        [self login:nil];
+    } else if (loginModel.isRemember == YES) {
+        self.pwdTextField.text = loginModel.loginPwd;
+    }
+
 }
 
 
@@ -214,6 +225,15 @@
 
 - (void)login:(UIButton *)loginBtn {
     if ([self.nameTextField.text isEqualToString:@"jxmbp"] && [self.pwdTextField.text isEqualToString:@"123456"]) {
+        
+        // 保存登录信息
+        JXLoginModel * model = [[JXLoginModel alloc] init];
+        model.isAuto = self.isAuto.on;
+        model.isRemember = self.isRemeber.on;
+        model.loginName = self.nameTextField.text;
+        model.loginPwd = self.pwdTextField.text;
+        [JXLoginModelTool saveLoginModel:model];
+        
         MBProgressHUD * hud = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
         hud.mode = MBProgressHUDModeIndeterminate;
         hud.label.text = @"登陆中...";
@@ -253,7 +273,6 @@
         _nameTextField.delegate = self;
         _nameTextField.borderStyle = UITextBorderStyleRoundedRect;
         _nameTextField.placeholder = @"请输入用户名";
-        _nameTextField.text = @"jxmbp";
         _nameTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
     }
     return _nameTextField;
@@ -265,7 +284,6 @@
         _pwdTextField.delegate = self;
         _pwdTextField.borderStyle = UITextBorderStyleRoundedRect;
         _pwdTextField.placeholder = @"请输入密码";
-        _pwdTextField.text = @"123456";
         _pwdTextField.secureTextEntry = YES;
         _pwdTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
     }

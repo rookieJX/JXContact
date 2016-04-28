@@ -31,6 +31,9 @@
 		5B8496B11CD0A23700A1B52F /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8496A11CD0A23700A1B52F /* MBProgressHUD.m */; };
 		5B8496B71CD0A3D200A1B52F /* JXAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8496B61CD0A3D200A1B52F /* JXAddViewController.m */; };
 		5B8496BA1CD0A52A00A1B52F /* JXContactModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8496B91CD0A52A00A1B52F /* JXContactModel.m */; };
+		5BC77EFD1CD2037300C5E280 /* JXContactModelTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC77EFC1CD2037300C5E280 /* JXContactModelTool.m */; };
+		5BC77F001CD20B6100C5E280 /* JXLoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC77EFF1CD20B6100C5E280 /* JXLoginModel.m */; };
+		5BC77F031CD20D4100C5E280 /* JXLoginModelTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC77F021CD20D4100C5E280 /* JXLoginModelTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +106,13 @@
 		5B8496B61CD0A3D200A1B52F /* JXAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXAddViewController.m; sourceTree = "<group>"; };
 		5B8496B81CD0A52A00A1B52F /* JXContactModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXContactModel.h; sourceTree = "<group>"; };
 		5B8496B91CD0A52A00A1B52F /* JXContactModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXContactModel.m; sourceTree = "<group>"; };
+		5BC77EFA1CD1FCF300C5E280 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		5BC77EFB1CD2037300C5E280 /* JXContactModelTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXContactModelTool.h; sourceTree = "<group>"; };
+		5BC77EFC1CD2037300C5E280 /* JXContactModelTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXContactModelTool.m; sourceTree = "<group>"; };
+		5BC77EFE1CD20B6100C5E280 /* JXLoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JXLoginModel.h; path = JXContact/Classes/Contact/Model/JXLoginModel.h; sourceTree = SOURCE_ROOT; };
+		5BC77EFF1CD20B6100C5E280 /* JXLoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JXLoginModel.m; path = JXContact/Classes/Contact/Model/JXLoginModel.m; sourceTree = SOURCE_ROOT; };
+		5BC77F011CD20D4100C5E280 /* JXLoginModelTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JXLoginModelTool.h; path = JXContact/Classes/Contact/Model/JXLoginModelTool.h; sourceTree = SOURCE_ROOT; };
+		5BC77F021CD20D4100C5E280 /* JXLoginModelTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JXLoginModelTool.m; path = JXContact/Classes/Contact/Model/JXLoginModelTool.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +285,8 @@
 			children = (
 				5B8496B81CD0A52A00A1B52F /* JXContactModel.h */,
 				5B8496B91CD0A52A00A1B52F /* JXContactModel.m */,
+				5BC77EFB1CD2037300C5E280 /* JXContactModelTool.h */,
+				5BC77EFC1CD2037300C5E280 /* JXContactModelTool.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -308,6 +320,10 @@
 		5B84967E1CD0A23700A1B52F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5BC77EFE1CD20B6100C5E280 /* JXLoginModel.h */,
+				5BC77EFF1CD20B6100C5E280 /* JXLoginModel.m */,
+				5BC77F011CD20D4100C5E280 /* JXLoginModelTool.h */,
+				5BC77F021CD20D4100C5E280 /* JXLoginModelTool.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -507,10 +523,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BC77EFD1CD2037300C5E280 /* JXContactModelTool.m in Sources */,
 				5B8496A91CD0A23700A1B52F /* MASConstraintMaker.m in Sources */,
 				26D77AAE1CD10F3F005837D9 /* JXEditController.m in Sources */,
 				5B8496A31CD0A23700A1B52F /* JXMainController.m in Sources */,
 				5B8496BA1CD0A52A00A1B52F /* JXContactModel.m in Sources */,
+				5BC77F001CD20B6100C5E280 /* JXLoginModel.m in Sources */,
 				5B8496A21CD0A23700A1B52F /* JXContactController.m in Sources */,
 				5B8496A81CD0A23700A1B52F /* MASConstraint.m in Sources */,
 				5B8496B01CD0A23700A1B52F /* ViewController+MASAdditions.m in Sources */,
@@ -520,6 +538,7 @@
 				5B8496AC1CD0A23700A1B52F /* MASViewConstraint.m in Sources */,
 				5B8496AB1CD0A23700A1B52F /* MASViewAttribute.m in Sources */,
 				5B8496B71CD0A3D200A1B52F /* JXAddViewController.m in Sources */,
+				5BC77F031CD20D4100C5E280 /* JXLoginModelTool.m in Sources */,
 				5B8496AF1CD0A23700A1B52F /* View+MASAdditions.m in Sources */,
 				5B8496A51CD0A23700A1B52F /* main.m in Sources */,
 				5B8496A41CD0A23700A1B52F /* AppDelegate.m in Sources */,
@@ -564,6 +583,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				268DE6AB1CCF9B200011A3F6 /* Base */,
+				5BC77EFA1CD1FCF300C5E280 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

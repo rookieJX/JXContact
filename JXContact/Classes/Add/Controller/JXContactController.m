@@ -10,6 +10,7 @@
 #import "JXAddViewController.h"
 #import "JXContactModel.h"
 #import "JXEditController.h"
+#import "JXContactModelTool.h"
 @interface JXContactController ()<JXAddViewControllerDelegate>
 
 /** 模型列表 */
@@ -101,6 +102,7 @@
 #pragma mark - JXAddViewControllerDelegate
 - (void)addViewController:(JXAddViewController *)addVC addBtnClicked:(JXContactModel *)contact {
     [self.contacts addObject:contact];
+    [JXContactModelTool saveContactModel:contact];
     [self.tableView reloadData];
 }
 
