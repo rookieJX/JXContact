@@ -10,7 +10,8 @@
 #import "JXAddViewController.h"
 #import "JXContactModel.h"
 #import "JXEditController.h"
-#import "JXContactModelTool.h"
+
+#define PATH_CONTACT [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@"contact.archive"]
 @interface JXContactController ()<JXAddViewControllerDelegate>
 
 /** 模型列表 */
@@ -95,22 +96,52 @@
     edit.contact = model;
     edit.block = ^(){
         [self.tableView reloadData];
+        [NSKeyedArchiver archiveRootObject:self.contacts toFile:PATH_CONTACT];
     };
     [self.navigationController pushViewController:edit animated:YES];
+}
+
+//- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+//    if (editingStyle == UITableViewCellEditingStyleDelete) {
+//        [self.contacts removeObjectAtIndex:indexPath.row];
+//        
+//        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationLeft];
+//    }
+//}
+
+/**
+ *  多个按钮操作
+ */
+- (NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewRowAction * actionAdd = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"增加" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+        [self addContact];
+    }];
+    actionAdd.backgroundColor = [UIColor orangeColor];
+    UITableViewRowAction * actionDelete = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"删除" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+        [self.contacts removeObjectAtIndex:indexPath.row];
+        
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationLeft];
+
+    }];
+    
+    return @[actionDelete,actionAdd];
 }
 
 #pragma mark - JXAddViewControllerDelegate
 - (void)addViewController:(JXAddViewController *)addVC addBtnClicked:(JXContactModel *)contact {
     [self.contacts addObject:contact];
-    [JXContactModelTool saveContactModel:contact];
     [self.tableView reloadData];
+    [NSKeyedArchiver archiveRootObject:self.contacts toFile:PATH_CONTACT];
 }
 
 
 #pragma mark - 懒加载
 - (NSMutableArray *)contacts {
     if (_contacts == nil) {
-        _contacts = [NSMutableArray array];
+        _contacts = [NSKeyedUnarchiver unarchiveObjectWithFile:PATH_CONTACT];
+        if (_contacts == nil) {
+            _contacts = [NSMutableArray array];
+        }
     }
     return _contacts;
 }

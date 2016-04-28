@@ -60,17 +60,20 @@
     // 点击登陆
     [self createLogic];
     
-    // 主动调用
-    [self textChanged];
-    
     
     // 自动登录
     JXLoginModel * loginModel = [JXLoginModelTool loginModel];
+    self.nameTextField.text = loginModel.loginName;
+    self.isAuto.on = loginModel.isAuto;
+    self.isRemeber.on = loginModel.isRemember;
     if (loginModel.isAuto == YES) {
+        self.pwdTextField.text = loginModel.loginPwd;
         [self login:nil];
     } else if (loginModel.isRemember == YES) {
         self.pwdTextField.text = loginModel.loginPwd;
     }
+    // 主动调用
+    [self textChanged];
 
 }
 

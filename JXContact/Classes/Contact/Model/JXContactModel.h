@@ -18,10 +18,5 @@
 /** 联系方式 */
 @property (nonatomic,strong) NSString * mobile;
 
-/** 是否是自动登录 */
-@property (nonatomic,assign)BOOL isAuto;
-
-/** 是否是记住密码 */
-@property (nonatomic,assign)BOOL isRemember;
 
 @end
